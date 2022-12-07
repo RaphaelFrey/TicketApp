@@ -44,7 +44,7 @@ router.post('/api/users/signin', [
             jwt: userJWT
         };
 
-        res.send(200).send(existingUser);
+        res.sendStatus(200).send(existingUser);
 });
 
 export { router as signinRouter };
