@@ -6,6 +6,7 @@ import {useState} from "react";
  * @param url
  * @param method must be equal to get, post etc..
  * @param body
+ * @param onSuccess
  * @returns {{doRequest: ((function(): Promise<void>)|*), errors: unknown}}
  */
 const useRequest = ({url, method, body, onSuccess }) => {
