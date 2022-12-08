@@ -32,7 +32,7 @@ afterAll(async () => {
 
 global.ticketsignin = () => {
     const payload = {
-        id: '1lk24j124l',
+        id: new mongoose.Types.ObjectId().toHexString(),
         email: 'test@test-com'
     };
     const token = jwt.sign(payload, process.env.JWT_KEY!);
